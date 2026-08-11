@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <climits>
 using namespace std;
 
 int main()
@@ -16,14 +17,16 @@ int main()
         cin >> arr[i];
     }
 
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        largest = arr[0];
-
         if (arr[i] > largest)
         {
             second_largest = largest;
             largest = arr[i];
+        }
+        else if (arr[i] > second_largest && arr[i] != largest)
+        {
+            second_largest = arr[i];
         }
     }
     cout << second_largest << endl;
