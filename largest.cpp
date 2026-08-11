@@ -8,6 +8,7 @@ int main()
     cin >> n; // how many numbers
 
     int num;
+    cin >> num;
     int result = num;
 
     for (int i = 1; i <= n; i++)
