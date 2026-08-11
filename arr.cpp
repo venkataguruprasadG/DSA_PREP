@@ -24,5 +24,5 @@ int main()
         }
     }
     cout << count_even << endl;
-    cout << count_odd << endl;
+    cout << count_odd << " " << endl;
 }
