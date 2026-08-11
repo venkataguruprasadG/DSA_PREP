@@ -11,22 +11,19 @@ int main()
     int largest = INT_MIN;
     int second_largest = INT_MIN;
 
-    vector<int> arr(n);
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
-    }
+        int num;
+        cin >> num;
 
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[i] > largest)
+        if (num > largest)
         {
             second_largest = largest;
-            largest = arr[i];
+            largest = num;
         }
-        else if (arr[i] > second_largest && arr[i] != largest)
+        else if (num > second_largest && num != largest)
         {
-            second_largest = arr[i];
+            second_largest = num;
         }
     }
     cout << second_largest << endl;
