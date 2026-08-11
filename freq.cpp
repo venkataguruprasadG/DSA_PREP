@@ -6,16 +6,15 @@ int main()
     int n;
     cin >> n;
 
+    int num;
     int find;
     cin >> find;
 
     int count = 0;
-
-    int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
-        if (arr[i] == find)
+        cin >> num;
+        if (num == find)
         {
             count++;
         }
