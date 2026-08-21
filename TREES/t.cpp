@@ -22,6 +22,9 @@ void preorder(TreeNode *root)
     {
         return;
     }
+
+    cout << root->data << endl;
+
     preorder(root->left);
 
     preorder(root->right);
